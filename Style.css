@@ -1,0 +1,60 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.landing{
+ background-image: url("images/background1.png");
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size:cover;
+ /* background-clip: content-box; */
+}
+
+.menu-bg{
+  background-image: url("images/background1.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+
+.module {
+ /* border: 2px solid orange;
+border-color: -moz-linear-gradient(top, red, #111111); */
+
+ /* border-image:
+  linear-gradient(to right,
+   red,
+   rgba(0, 0, 0, 0)) 1 100%; */
+   /* border-image: linear-gradient(to right, green, #B0331E 35.6%, to left #D48D1D 50.93%); */
+     /* border: linear-gradient(to right, #00C853, #B2FF59); */
+   
+}
+
+.scroll-reveal > *{
+ display: inline;
+ color: hsl(0 0% 100% / 0.2);
+ background-clip: text;
+ background-repeat: no-repeat;
+ background-size: 0% 100%;
+ background-image: linear-gradient(90deg, white, white);
+ animation: scroll-reveal linear forwards 1s;
+ animation-timeline: view();
+ /* animation-range-start: contain 20vh;
+ animation-range-end: contain 30vh; */
+}
+
+@keyframes scroll-reveal {
+ to { background-size: 200% 100%;}
+}
